@@ -21,6 +21,11 @@ commits:
 
 Activity 3:
 
+commits:
+- activity3 - implement home page
+
+![image](https://user-images.githubusercontent.com/55057578/191578124-0ac601c6-3b01-4cc3-b461-39d2b07168dc.png)
+
 
 Activity 4:
 
