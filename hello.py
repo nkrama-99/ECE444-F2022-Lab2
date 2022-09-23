@@ -4,12 +4,12 @@ from ensurepip import bootstrap
 from flask import Flask, render_template, session, redirect, url_for, flash
 from flask_bootstrap import Bootstrap
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField
+from wtforms import StringField, SubmitField, EmailField
 from wtforms.validators import DataRequired, Email
 
 class NameForm(FlaskForm):
     name = StringField('What is your name?', validators=[DataRequired()])
-    email = StringField('What is your UofT Email Address?', validators=[Email()])
+    email = EmailField('What is your UofT Email Address?', validators=[DataRequired(), Email()])
     submit = SubmitField('Submit')
     
 app = Flask(__name__)
